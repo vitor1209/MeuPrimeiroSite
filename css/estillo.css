@@ -1,0 +1,41 @@
+code{
+    background-color: rgba(220, 220, 220, 0.7);
+}
+.tag{
+    color: red;
+}
+
+li{
+    list-style: none;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+table , th , td{
+    border: solid 2px black;
+    margin-top: 2rem;
+}
+
+h1 , h2{
+    color: darkslateblue;
+}
+
+.menu{
+display: flex;
+align-items: center;
+line-height: 70px;
+background: rgba(0, 0, 0, 0.5);
+padding: 0 80px;
+margin: -10px;
+}
+
+.tituloMenu{
+    position: relative; 
+    left: 10rem;
+}
+
+#logo{
+    width: 5rem ; 
+    position: relative; 
+    right: 15rem;
+}
