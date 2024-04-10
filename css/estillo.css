@@ -20,7 +20,7 @@ h1 , h2{
     color: darkslateblue;
 }
 
-.menu{
+header{
 display: flex;
 align-items: center;
 line-height: 70px;
