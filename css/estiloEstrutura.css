@@ -1,19 +1,4 @@
-body{
-    background-color: rgb(191, 191, 191);
-}
 
-header{
-    background-color: blue;
-    padding: 3%;
-}
-
-.logo{
-    background-color: yellow;
-}
-
-nav{
-    background-color: grey;
-}
 
 main{
     background-color: greenyellow;
