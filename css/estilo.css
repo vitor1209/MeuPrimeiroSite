@@ -1,5 +1,6 @@
 header{
     height: 6.5vw;
+    align-items: center;
 }
  
 .Logo{
@@ -11,6 +12,8 @@ header{
     font-size: 1.3rem;
     font-weight: 900;
     text-transform: uppercase;
+    position: relative;
+    top: 1em;
 }
 
 header > h3{
@@ -66,6 +69,14 @@ nav{
     position: relative;
 }
 
+nav > ul{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    top: -1.75rem;
+}
+
 .fundo{
     background-color: #61ce70a8;
     display: block;
@@ -98,6 +109,37 @@ nav{
 
 .ladoImg{
     width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.adicao{
+    width: 6%;
+    margin: 1rem;
+}
+
+.ladoImg > p {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #575757;
+    font-family: "PT Sans", Sans-serif;
+    font-weight: 800;
+    text-transform: uppercasex;
+    position: relative;
+    top: 3.5rem;
+    right: 5rem;
+    display: block;
+}
+
+.ladoImg > h1{
+    color: #575757;
+    font-family: "PT Sans", Sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    display: flex;
+    position: relative;
+
+
 }
 
 .ladoTxt > h1{
@@ -123,6 +165,14 @@ nav{
 section{
     display: flex;
     align-items: center;
+}
+
+.separadortxt{
+    width: 15%;
+    height: 5px;
+    background-color: #61CE70;
+    border-radius: 15px;
+    margin: 15px;
 }
 
 .linha{
