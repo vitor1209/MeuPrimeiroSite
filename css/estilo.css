@@ -223,3 +223,25 @@ footer{
     left: 43%;
     width: 14%;
 }
+
+.linhaImg{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-3 p{
+   font-size: 1rem;
+   text-align: center;
+}
+
+.imgGaleria{
+    width: 90%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
