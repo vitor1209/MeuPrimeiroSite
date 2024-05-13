@@ -1,19 +1,21 @@
+body{
+    background-color: #e6dbc5;
+}
+
 header{
-    height: 6.5vw;
+    height: 8.5vw;
     align-items: center;
 }
  
 .Logo{
     display: flex;
     align-items: center;
-    margin-right: 2rem;
     font-size: 2rem;
-    font-family: "Josefin Sans", Sans-serif;
+    font-family: 'rubik';
     font-size: 1.3rem;
     font-weight: 900;
     text-transform: uppercase;
-    position: relative;
-    top: 1em;
+    background-color: #265742;
 }
 
 header > h3{
@@ -29,7 +31,7 @@ header > h3{
     font-weight: 800;
     letter-spacing: 1.4px;
     color: #FFFFFF;
-    background-color: #00893B;
+    background-color: #9cdb72;
     border-radius:25px;
     padding: 10px;
     padding-right: 20px;
@@ -56,7 +58,7 @@ header > h3{
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    color: #575757;
+    color: #ffffffb7;
 }
 
 .linkMenu:hover{
@@ -64,53 +66,82 @@ header > h3{
     transition: all .3s ease;
 }
 
-nav{
-    left: 4rem;
-    position: relative;
-}
-
 nav > ul{
     display: flex;
     justify-content: center;
     position: relative;
     align-items: center;
-    top: -1.75rem;
+    top: -3rem;
 }
 
 .fundo{
-    background-color: #61ce70a8;
-    display: block;
-    height: 87.89vh;
-}
-
-.fundo > img{
-    height: 40vw;
-    position: relative;
-    left: 58%;
-}
-
-.txtFundo{
-    position: relative;
-    bottom: 30rem;
-    margin-left: 2rem;
-    color: #ffffff;
+    height: 70vh;
+    color: #265742;
     font-family: "PT Sans", Sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 800;
-    padding: 2rem;
-    width: 50%;
-    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: -0.03em;
+    margin-left: 14%;
+    margin-right: 14%;
 }
 
-.ladoTxt{
-    width: 65%;
-    padding: 5%;
+.fundo > h4{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.3em;
+    margin-top: 10.75vh;
+}
+
+section{
+    display: flex;
+    align-items: center;
+}
+
+#descrição{
+    height: 95vh;
+    background-color: #265742;
 }
 
 .ladoImg{
-    width: auto;
+    height: 100%;
+    width: 50%;
+    background-image: url(https://cdn.shopify.com/s/files/1/0594/9397/4211/files/pattnerOp.svg?v=1661762153);
+    background-repeat: repeat;
+    background-position: right top;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.terraDescri{
+    width: 80%;
+}
+
+.ladoTxt {
+    width: 50%;
+    margin: 2%;
+}
+
+#descrição > .ladoTxt > p{
+    color: #9cdb72;
+}
+
+#descrição > .ladoTxt > h1{
+    color: #9cdb72;
+}
+
+.separadortxt{
+    width: 15%;
+    height: 5px;
+    background-color: #e6dbc5;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+#numeros{
+    height: 35vh;
 }
 
 .adicao{
@@ -158,32 +189,12 @@ nav > ul{
     margin-top: 2rem;
 }
 
-#descrição{
-    height: 100vh;
-}
-
-section{
-    display: flex;
-    align-items: center;
-}
-
-.separadortxt{
-    width: 15%;
-    height: 5px;
-    background-color: #61CE70;
-    border-radius: 15px;
-    margin: 15px;
-}
-
 .linha{
     background-color: #61CE70;
     width: 100%;
     height: 3px;
 }
 
-#numeros{
-    height: 90vh;
-}
 
 .bi{
     color: #00893B;
