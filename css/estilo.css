@@ -11,7 +11,7 @@ header{
     display: flex;
     align-items: center;
     font-family: 'rubik';
-    font-size: 150%;
+    font-size: 2vw;
     font-weight: 900;
     text-transform: uppercase;
     background-color: #265742;
@@ -32,10 +32,10 @@ header > h3{
     color: #FFFFFF;
     background-color: #9cdb72;
     border-radius:25px;
-    padding: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    left: 2.5rem;
+    padding: 2vh;
+    padding-right: 3vh;
+    padding-left: 3vh;
+   
     position: relative;
     border: none;
 }
@@ -66,7 +66,7 @@ header > h3{
 }
 
 nav > ul{
-    /*display: flex;*/
+    display: flex;
     justify-content: center;
     position: relative;
     align-items: center;
@@ -148,7 +148,7 @@ section{
 #numeros > .ladoTxt{
     width: 80%;
     margin-left: 8rem;
-    font-size: 3.4vw; 
+    font-size: 3vw; 
 }
 
 .setaRecicla{
@@ -172,19 +172,19 @@ section{
 
 .liNum > p{
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.2vw;
     font-weight: 800;
     position: relative;
     right:3rem;
 }
 
 .liNum > h1{
-    font-size: 3rem;
+    font-size: 3vw; 
     font-weight: 900;
 }
 
 .ladoTxt > h1{
-    font-size: 3rem;
+    font-size: 3vw; 
     color: #265742;
     font-family: "PT Sans", Sans-serif;
     font-weight: 800;
@@ -212,7 +212,7 @@ section{
 }
 
 .tituloPQ > h4{
-    font-size: 0.5vw;
+    font-size: 1vw;
     color:  #e6dbc5;
     margin-bottom: 2rem;
     letter-spacing: 0.3em;
@@ -239,12 +239,13 @@ section{
     display: flex;
     text-align: left;
     justify-content: center;
+    flex-flow: row wrap;
 }
 
 .ladoTxt > p{
     color: #9ebaa8;
     font-family: "PT Sans", Sans-serif;
-    font-size: 1rem;
+    font-size: 1.1vw;
     font-weight: 300;
     margin-top: 1rem;
 }
@@ -313,6 +314,17 @@ footer > nav{
     margin-right: 1%;
 }
 
-footer > nav > .Logo{
-    margin-left: 35%;
+@media screen and (max-width: 800px){
+    .pqLado > .boxImg {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 200px){
+    #numeros {
+        position: relative;
+        left: -3rem;
+    }
+
 }
