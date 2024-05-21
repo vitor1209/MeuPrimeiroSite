@@ -35,7 +35,7 @@ header > h3{
     padding: 2vh;
     padding-right: 3vh;
     padding-left: 3vh;
-   
+    left: 40%;
     position: relative;
     border: none;
 }
@@ -66,11 +66,11 @@ header > h3{
 }
 
 nav > ul{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     position: relative;
     align-items: center;
-    top: -3rem;
+    top: -3.4rem;
 }
 
 .fundo{
