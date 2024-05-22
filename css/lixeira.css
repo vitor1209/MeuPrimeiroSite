@@ -38,7 +38,7 @@ header > h3{
     padding-left: 3vh;
     position: relative;
     border: none;
-    left: 50%;
+    left: 0%;
 }
 
 .btnApp:hover{
@@ -73,8 +73,8 @@ header > h3{
 }
 
 nav > ul{
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     position: relative;
     align-items: center;
     top: -3.3rem;
@@ -115,10 +115,10 @@ nav > ul{
     z-index: -1;
 }
 
-
 main{
     background-image: url(https://cdn.shopify.com/s/files/1/0594/9397/4211/files/desktopSquarePattern.svg?v=1668587822);
     width: 100%;
+    margin-top: 7rem;
 }
 
 #galeria{
