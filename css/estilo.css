@@ -5,8 +5,8 @@ body{
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     align-items: center;
     padding: 1rem;
     background-color: #265742;
@@ -15,10 +15,10 @@ header {
 }
 
 .Logo{
-    display: flex;
+    /* display: flex; */
     align-items: center;
     font-family: 'rubik';
-    font-size: 2vw;
+    font-size: 100%;
     font-weight: 900;
     text-transform: uppercase;
     background-color: #265742;
@@ -83,7 +83,8 @@ nav > ul{
 }
 
 .fundo{
-    height: 70vh;
+    height: 100%;
+    margin-bottom: 18%;
     color: #265742;
     font-family: "PT Sans", Sans-serif;
     font-size: 3.5vw;
@@ -111,7 +112,7 @@ section{
 }
 
 #descrição{
-    height: 95vh;
+    height: 120%;
     background-color: #265742;
 }
 
@@ -153,10 +154,6 @@ section{
     margin: 15px;
 }
 
-#numeros{
-    height: 35vh;
-}
-
 #numeros > .ladoTxt{
     width: 80%;
     margin-left: 8rem;
@@ -164,7 +161,8 @@ section{
 }
 
 .setaRecicla{
-    width: 70%;
+    width: 18rem;
+
 }
 
 .adicao{
@@ -184,7 +182,7 @@ section{
 
 .liNum > p{
     padding: 1rem;
-    font-size: 1.2vw;
+    font-size: 1rem;
     font-weight: 800;
     position: relative;
     right:3rem;
@@ -204,7 +202,7 @@ section{
 }
 
 #porQue{
-    height: 150vh;
+    height: 100%;
     display: block;
     background-color: #265742;
     text-align: center;
@@ -239,6 +237,7 @@ section{
     margin-top: 3rem;
     display: flex;
     align-items: center;
+    float: left;
 }
 
 .pqLado > .boxImg > img{
@@ -301,7 +300,7 @@ footer > nav > p > a {
 }
 
 footer > nav{
-    display: flex;
+    /* display: flex; */
     flex-flow: row wrap;
     align-items: center;
 }
