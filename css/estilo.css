@@ -114,6 +114,7 @@ section{
 #descrição{
     height: 120%;
     background-color: #265742;
+    padding: 0rem
 }
 
 #descrição > .ladoImg{
@@ -300,7 +301,7 @@ footer > nav > p > a {
 }
 
 footer > nav{
-    /* display: flex; */
+    display: flex;
     flex-flow: row wrap;
     align-items: center;
 }
@@ -325,7 +326,7 @@ footer > nav{
     margin-right: 1%;
 }
 
-@media screen and (max-width: 768px ){
+@media screen and (max-width: 800px ){
     .pqLado > .boxImg {
         display: none;
     }
@@ -336,6 +337,53 @@ footer > nav{
 
     menu > ul{
         display: none;
+    }
+
+    .fundo > h4 {
+        font-size: 1rem;
+        letter-spacing: 0.25em;
+    }
+
+    
+    .fundo {
+        height: 38vw;
+    }
+
+
+    #descrição > .ladoImg {
+        margin: 0;
+    }
+
+    #descrição {
+        height: 80vw;
+    }
+
+
+    #descrição > .ladoTxt > p {
+        font-size: 1rem;
+        }
+
+    #descrição > .ladoTxt > h1 {
+        font-size: 1.8rem;
+    }
+
+    .ladoTxt > p {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .ladoTxt{
+        width: 70%;
+    }
+
+    .tituloPQ > h1 {
+        padding-bottom: 0rem;
+}
+
+    .tituloPQ > h4 {
+        font-size: 0.8rem;
+        margin-bottom: 0rem;
+        letter-spacing: 0.2rem;
     }
 
 }
