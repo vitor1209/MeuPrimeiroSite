@@ -331,6 +331,11 @@ footer > nav{
         display: none;
     }
 
+    .setaRecicla{
+    width: 60%;
+
+}
+
     .btnApp{
        display: none;
     }
@@ -356,15 +361,6 @@ footer > nav{
 
     #descrição {
         height: 80vw;
-    }
-
-
-    #descrição > .ladoTxt > p {
-        font-size: 1rem;
-        }
-
-    #descrição > .ladoTxt > h1 {
-        font-size: 1.8rem;
     }
 
     .ladoTxt > p {
@@ -393,6 +389,11 @@ footer > nav{
         position: relative;
         left: -3rem;
     }
+
+    .setaRecicla{
+    width: 60%;
+
+}
 
     .menu a{
         font-size: 20px;
