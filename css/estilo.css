@@ -139,12 +139,12 @@ section{
 
 #descrição > .ladoTxt > p{
     color: #9cdb72;
-    font-size: 75%;
+    font-size: 1rem;
 }
 
 #descrição > .ladoTxt > h1{
     color: #9cdb72;
-    font-size: 100%;   
+    font-size: 2.5rem;   
 }
 
 .separadortxt{
@@ -162,8 +162,7 @@ section{
 }
 
 .setaRecicla{
-    width: 60%;
-
+    width: 100%;
 }
 
 .adicao{
@@ -386,13 +385,15 @@ footer > nav{
 
 @media screen and (max-width: 600px){
     #numeros {
-        position: relative;
-        left: -3rem;
+        width: 100%;
     }
 
     .setaRecicla{
-    width: 60%;
+    width: 0%;
+}
 
+.ladoImg{
+    width: 0%;
 }
 
     .menu a{
@@ -531,6 +532,14 @@ footer > nav{
 
     #descrição{
         height: 140vw;
+    }
+
+    #descrição > .ladoTxt > h1 {
+        font-size: 1.5rem;
+    }
+
+    #descrição > .ladoTxt > p {
+        font-size: 1rem;
     }
 
     .ladoTxt > p {
