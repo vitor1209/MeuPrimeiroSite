@@ -384,9 +384,7 @@ footer > nav{
 }
 
 @media screen and (max-width: 600px){
-    #numeros {
-        width: 100%;
-    }
+
 
     .setaRecicla{
     width: 0%;
@@ -423,8 +421,7 @@ footer > nav{
       line-height: 12px;
       padding: 0 40px;
     }
-    
-    
+
     .btn-menu{
       display: block;
       top: 5%;
@@ -484,17 +481,6 @@ footer > nav{
       display: none;
     } 
     
-    @keyframes slideDown {
-      from {
-        opacity: 0;
-        transform: translateY(-20%);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
     .menu_mobile {
       display: none;
       animation: slideDown 0.5s ease-out forwards;
@@ -524,6 +510,7 @@ footer > nav{
         margin-left: 8%;
         margin-right: 8%;
         font-size: 1.2rem;
+        padding: 0rem;
     }
 
     .fundo > h4 {
@@ -535,11 +522,11 @@ footer > nav{
     }
 
     #descrição > .ladoTxt > h1 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     #descrição > .ladoTxt > p {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 
     .ladoTxt > p {
@@ -548,4 +535,23 @@ footer > nav{
         font-weight: 300;
         margin-top: 1rem;
     }
+
+    #descrisao > .ladoTxt >h1 {
+        position: relative;
+        right: 3rem;
+        font-size: 1.2rem;
+    }
+
+    .tituloPQ > h1 {
+        line-height: 2rem;
+        margin-top: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .fundo {
+        height: 40vw;
+    }
+
+    
+
 }
