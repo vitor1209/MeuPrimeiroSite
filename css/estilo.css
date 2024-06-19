@@ -139,12 +139,12 @@ section{
 
 #descrição > .ladoTxt > p{
     color: #9cdb72;
-    font-size: 1.3vw;
+    font-size: 75%;
 }
 
 #descrição > .ladoTxt > h1{
     color: #9cdb72;
-    font-size: 3.4vw;   
+    font-size: 100%;   
 }
 
 .separadortxt{
@@ -162,7 +162,7 @@ section{
 }
 
 .setaRecicla{
-    width: 18rem;
+    width: 60%;
 
 }
 
