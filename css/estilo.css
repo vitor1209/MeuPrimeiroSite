@@ -4,6 +4,66 @@ body{
      padding: 0;
 }
 
+ .hamb{
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    bottom: 2.5rem;   
+    left: 35%;
+    position: relative;
+    width: 50px;
+  }
+  
+  #checkbox-menu{
+    position: absolute;
+    opacity: 0;
+  }
+  
+  #lblMenu{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+  }
+  
+  label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: #fff;
+    transition: 0.25s ease-in-out;
+  }
+  
+  label span:nth-child(1){
+    top: 0;
+  }
+  
+  label span:nth-child(2){
+    top: 10px;
+  }
+  
+  label span:nth-child(3){
+    top: 20px;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top:8px;
+  }
+
 header {
     /* display: flex;
     justify-content: space-between; */
@@ -87,7 +147,7 @@ nav > ul{
     margin-bottom: 18%;
     color: #265742;
     font-family: "PT Sans", Sans-serif;
-    font-size: 3.5vw;
+    font-size: 2.9rem;
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
@@ -99,7 +159,7 @@ nav > ul{
 }
 
 .fundo > h4{
-    font-size: 1.1vw;
+    font-size: 1rem;
     margin-bottom: 2rem;
     letter-spacing: 0.3em;
     margin-top: 10.75vh;
@@ -157,8 +217,7 @@ section{
 
 #numeros > .ladoTxt{
     width: 80%;
-    margin-left: 8rem;
-    font-size: 3vw; 
+    padding: 2%;
 }
 
 .setaRecicla{
@@ -189,12 +248,12 @@ section{
 }
 
 .liNum > h1{
-    font-size: 3vw; 
+    font-size: 2.8rem; 
     font-weight: 900;
 }
 
 .ladoTxt > h1{
-    font-size: 3vw; 
+    font-size: 2.8rem; 
     color: #265742;
     font-family: "PT Sans", Sans-serif;
     font-weight: 800;
@@ -211,7 +270,7 @@ section{
 .tituloPQ > h1{
     color: #9cdb72;
     font-family: "PT Sans", Sans-serif;
-    font-size: 3.4vw;
+    font-size: 3.1rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: -0.03em;
@@ -222,7 +281,7 @@ section{
 }
 
 .tituloPQ > h4{
-    font-size: 1vw;
+    font-size: 1rem;
     color:  #e6dbc5;
     margin-bottom: 2rem;
     letter-spacing: 0.3em;
@@ -256,7 +315,7 @@ section{
 .ladoTxt > p{
     color: #9ebaa8;
     font-family: "PT Sans", Sans-serif;
-    font-size: 1.1vw;
+    font-size: 1rem;
     font-weight: 300;
     margin-top: 1rem;
 }
@@ -326,6 +385,15 @@ footer > nav{
 }
 
 @media screen and (max-width: 800px ){
+    
+    .fundo {
+        height: 38vw;
+        margin-left: 8%;
+        margin-right: 8%;
+        font-size: 1.2rem;
+        padding: 0;
+    }
+
     .pqLado > .boxImg {
         display: none;
     }
@@ -348,11 +416,18 @@ footer > nav{
         letter-spacing: 0.25em;
     }
 
-    
-    .fundo {
-        height: 38vw;
+    .tituloPQ > h1 {
+        padding-bottom: 0;
+        line-height: 2rem;
+        margin-top: 1rem;
+        font-size: 0.8rem;
     }
 
+    .tituloPQ > h4 {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+        letter-spacing: 0.2rem;
+    }
 
     #descrição > .ladoImg {
         margin: 0;
@@ -371,39 +446,30 @@ footer > nav{
         width: 70%;
     }
 
-    .tituloPQ > h1 {
-        padding-bottom: 0rem;
-}
-
-    .tituloPQ > h4 {
-        font-size: 0.8rem;
-        margin-bottom: 0rem;
-        letter-spacing: 0.2rem;
-    }
-
 }
 
 @media screen and (max-width: 600px){
 
+    .hamb{
+        display: flex;
+        left: 80%;
+        position: relative;
+        width: 50px;
+        bottom:6.5rem ;
+      }
 
     .setaRecicla{
     width: 0%;
 }
 
-.ladoImg{
-    width: 0%;
-}
-
-    .menu a{
-        font-size: 20px;
-        line-height: 1.2rem;
-        font-weight: 700;
+    .ladoImg{
+        width: 0%;
     }
 
     .menu a{
-        font-size: 20px;
-        line-height: 1.2rem;
-        font-weight: 700;
+        font-size: 10px;
+        line-height: 1rem;
+        font-weight: 500;
     }
     
     li {
@@ -412,7 +478,7 @@ footer > nav{
       left: 120px;
       display: block;
     }
-    
+
     ul {
       display: none;
     }
@@ -422,95 +488,12 @@ footer > nav{
       padding: 0 40px;
     }
 
-    .btn-menu{
-      display: block;
-      top: 5%;
-      right: 1.3rem;
-      position: absolute;     
-      -webkit-tap-highlight-color: transparent;
-    }
-    
-    .btn-menu div{
-      width: 38px;
-      height: 4px;
-      background: #fff;
-      margin: 8px;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-    
-    .btn-menu-x{
-        display: none;
-        top: -0.5rem;
-        right: 0.3rem;
-        position: absolute;     
-        -webkit-tap-highlight-color: transparent;
-    
-    }
-    
-    .btn-menu-x .linha1{
-      width: 38px;
-      height: 5px;
-      background: #fff;
-      margin: 8px;
-      transform: rotate(45deg);
-      top: 28px;
-      right: 1rem;
-      position: relative;
-      border-radius: 10px;
-    }
-    
-    .btn-menu-x .linha2{
-      width: 38px;
-      height: 5px;
-      background: #fff;
-      margin: 8px;
-      transform: rotate(135deg);
-      top: 1rem;
-      right: 1rem;
-      position: relative;
-      border-radius: 10px;
-    }
-    
-    .abrir{
-      display: block;
-      height: 200px;
-    }
-    
-    .fechar{
-      display: none;
-    } 
-    
-    .menu_mobile {
-      display: none;
-      animation: slideDown 0.5s ease-out forwards;
-    }
-    
-    .menu_mobile.visible {
-      display: block; 
-    }
-    
-    .menu_mobile {
-      display: none; 
-      right: 1.3rem;
-      align-items: center;
-      text-align: center ;
-    }
-    
-    .menu_mobile li{
-      left: 2rem;
-      top: 2rem;
-    }
-
-    nav > ul{
-        display: none;
-    }
-
-    .fundo{
+    .fundo {
         margin-left: 8%;
         margin-right: 8%;
         font-size: 1.2rem;
-        padding: 0rem;
+        padding: 0;
+        height: 40vw;
     }
 
     .fundo > h4 {
@@ -552,6 +535,22 @@ footer > nav{
         height: 40vw;
     }
 
+    .ladoTxt > h1 {
+        font-size: 1rem;
+    }
+
+    .listNumeros {
+        display: block; 
+        margin-top: 0rem; 
+    }
+
+    .liNum > h1 {
+        font-size: 1rem;
+
+    }
     
+    #numeros {
+        padding: 2rem 7rem;
+    }
 
 }
