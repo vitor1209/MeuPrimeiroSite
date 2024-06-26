@@ -65,8 +65,9 @@ body{
   }
 
 header {
-    /* display: flex;
-    justify-content: space-between; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 1rem;
     background-color: #265742;
@@ -117,6 +118,7 @@ header > h3{
 
 .linkMenu{
     margin-right: 2rem;
+    text-align: center;
     font-family: "PT Sans", Sans-serif;
     font-size: 14px;
     font-weight: 600;
@@ -135,11 +137,10 @@ nav ul li {
 }
 
 nav > ul{
-     display: flex; 
+    display: flex; 
     align-items: center;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap;
 }
 
 .fundo{
@@ -450,8 +451,37 @@ footer > nav{
 
 @media screen and (max-width: 600px){
 
-    .hamb{
+      .visible{
+        display: block;
+      }
+
+      header{
+        flex-direction: row;
+        height: 13rem; 
+        align-items: center;
         display: flex;
+      }
+    
+      .menu{
+        position: absolute;
+        left: 40%;
+        top: 30%;
+        width: 10%;
+      }
+
+      .menu ul li {
+        display: inline;
+        margin-left: 1%;
+      }
+
+      nav > ul{
+        display: block;
+        width: 20%;
+        height: 2rem;
+      }
+
+    .hamb{
+        display: none;
         left: 80%;
         position: relative;
         width: 50px;
@@ -460,7 +490,7 @@ footer > nav{
 
     .setaRecicla{
     width: 0%;
-}
+    }
 
     .ladoImg{
         width: 0%;
@@ -469,23 +499,13 @@ footer > nav{
     .menu a{
         font-size: 10px;
         line-height: 1rem;
-        font-weight: 500;
-    }
-    
-    li {
-      font-size: 1rem; 
-      margin-right: 3rem;
-      left: 120px;
-      display: block;
-    }
-
-    ul {
-      display: none;
+        font-weight: 5900;
     }
     
     .menu{
       line-height: 12px;
       padding: 0 40px;
+      margin-top: -2rem;
     }
 
     .fundo {

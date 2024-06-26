@@ -63,15 +63,15 @@ body{
     top:8px;
   }
 
-header {
-    /* display: flex;
-    justify-content: space-between; */
+  header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 1rem;
     background-color: #265742;
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 3rem;
 }
 
 .Logo{
@@ -117,6 +117,7 @@ header > h3{
 
 .linkMenu{
     margin-right: 2rem;
+    text-align: center;
     font-family: "PT Sans", Sans-serif;
     font-size: 14px;
     font-weight: 600;
@@ -135,11 +136,10 @@ nav ul li {
 }
 
 nav > ul{
-     display: flex; 
+    display: flex; 
     align-items: center;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap;
 }
 
 .fundo{
@@ -344,13 +344,9 @@ footer > nav{
 
 @media screen and (max-width: 600px){
 
-    .hamb{
-        display: flex;
-        left: 80%;
-        position: relative;
-        width: 50px;
-        bottom:6.5rem ;
-      }
+    .btnApp{
+        display: none;
+    }
 
     #galeria > h2 {
         font-size: 1.4rem;
@@ -368,15 +364,61 @@ footer > nav{
         height: 54vh;
     }
 
-    .menu{
-      line-height: 12px;
-      padding: 0 40px;
+    .visible{
+        display: block;
+      }
+
+      header{
+        flex-direction: row;
+        height: 13rem; 
+        align-items: center;
+        display: flex;
+      }
+    
+      .menu{
+        position: absolute;
+        left: 40%;
+        top: 30%;
+        width: 10%;
+      }
+
+      .menu ul li {
+        display: inline;
+        margin-left: 1%;
+      }
+
+      nav > ul{
+        display: block;
+        width: 20%;
+        height: 2rem;
+      }
+
+    .hamb{
+        display: none;
+        left: 80%;
+        position: relative;
+        width: 50px;
+        bottom:6.5rem ;
+      }
+
+    .setaRecicla{
+    width: 0%;
+    }
+
+    .ladoImg{
+        width: 0%;
     }
 
     .menu a{
         font-size: 10px;
         line-height: 1rem;
-        font-weight: 500;
+        font-weight: 700;
+    }
+    
+    .menu{
+      line-height: 12px;
+      padding: 0 40px;
+      margin-top: -2rem;
     }
 
 }
