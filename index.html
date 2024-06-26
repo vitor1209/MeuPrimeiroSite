@@ -12,45 +12,29 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="shortcut icon" href="img/ico-recolhe-ai.ico" type="image/x-icon">
-    <script src="main.js" defer></script>
     <title>Recolhe aí</title>
 </head>
 <body> 
  
-<header>
+  <header class="cabecalho">
+        <div class="logo">
+            <img class="logotopo" src="img/logo.png" alt="">
+        </div>
+        <nav id="menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul>
+                <li><a href="index.html" onclick="document.getElementById('menu-toggle').click()">home</a></li>
+                <li><a href="lixeira.html" onclick="document.getElementById('menu-toggle').click()">sobre a lixeira</a></li>
+                <li><a href="#" onclick="document.getElementById('menu-toggle').click()">reciclagem</a></li>
+                <li><a href="#" onclick="document.getElementById('menu-toggle').click()">quem somos</a></li>
+                <li><a href="#" onclick="document.getElementById('menu-toggle').click()">futuro do projeto</a></li>
+                <li><a href="#" onclick="document.getElementById('menu-toggle').click()">contato</a></li>
+                <li><a href="#" onclick="document.getElementById('menu-toggle').click()">quem somos</a></li>                
+            </ul>
 
-    
-    <div class="Logo">
-        <img class="imgLogo" src="img/ico recolhe ai sem fundo.png" alt="icone lixeira reciclar">
-        <h3 id="txtLogo">Recolhe aí</h3>
-    </div>
-    <nav class="menu">
-        <ul>
-            <li> <a class="linkMenu" href="index.html">home</a> </li>
-            <li> <a class="linkMenu" href="lixeira.html">sobre a lixeira</a> </li>
-            <li> <a class="linkMenu" href="#">reciclagem</a> </li>
-            <li> <a class="linkMenu" href="#">quem somos</a> </li>
-            <li> <a class="linkMenu" href="#">futuro do projeto</a> </li>
-            <li> <a class="linkMenu" href="#">contato</a> </li>            
-            <li>
-              <button class="btnApp"><a href="#" target="_blank" rel="noopener noreferrer"></a>baixe o app</button>
-            </li>
-            
-        </ul>
-    </nav>
-    
-    <div class="hamb">
-        <input type="checkbox" id="checkbox-menu">
-    
-        <label id="lblMenu" for="checkbox-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-          
-        </label>
-     
-      </div>
-</header> 
+        </nav>
+    </header>
 
 
 <div class="fundo">
@@ -67,7 +51,7 @@
     <section id="descrição">
         
         <div class="ladoImg">
-            <img class="terraDescri" src="img/terra com lixo.png" alt="setas da reciclagem verde">
+            <img class="terraDescri" src="img/terraLixo.png" alt="setas da reciclagem verde">
         </div>
 
         <div class="ladoTxt">
@@ -92,7 +76,7 @@
             
             <div class="listNumeros">
 
-                <!-- <img class="adicao" src="img/ADIÇÃO.png" alt="sinal de adição verde">  -->
+           <!-- <img class="adicao" src="img/ADIÇÃO.png" alt="sinal de adição verde">  -->
                 <div class="liNum">
                     <h1>100</h1> <p>kg de lixo separado</p>
                 </div>
@@ -103,14 +87,14 @@
                 </div>
                 
                 <!-- <img class="adicao" src="img/ADIÇÃO.png" alt="sinal de adição verde"> -->
-                <div class="liNum">
+             <div class="liNum">
                     <h1>50</h1> <p>Catadores a artesãos beneficiados</p>
                 </div>
 
             </div>
         </div>
 
-            <div class="ladoImg">
+             <div class="ladoImg">
                 <img class="setaRecicla" src="img/logoReciclagem.png" alt="setas da reciclagem verde">
             </div>
 
@@ -144,11 +128,11 @@
             </div>
         </div>
             
-        </section>
+        </section> 
 
-</main>
+</main> 
 
-<footer>
+ <footer>
     <div class="linhaFooter"></div>
     <h1>
         Vamos nos conectar
@@ -187,12 +171,12 @@
 
             Github   
         </a>
-        </p>
+        </p> 
 
-        <div class="Logo">
-            <!-- <img class="imgLogo" src="img/ico recolhe ai sem fundo.png" alt="icone lixeira reciclar"> -->
+        <div class="Logo"> 
+            <!-- <img class="imgLogo" src="img/ico recolhe ai sem fundo.png" alt="icone lixeira reciclar">    -->
             <!-- <h3 id="txtLogo">Recolhe aí</h3> -->
-        </div>
+      </div> 
     </nav>
 </footer>
     

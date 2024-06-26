@@ -4,16 +4,59 @@ body{
      padding: 0;
 }
 
-  .hamb{
-    height: 100%;
-    display: none;
+header{
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    bottom: 2.5rem;   
-    left: 35%;
-    position: relative;
-  }
-  
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    background-color: #265742;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    transition: 0.7s;
+    color: #9cdb72;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
   #checkbox-menu{
     position: absolute;
     opacity: 0;
@@ -36,47 +79,9 @@ body{
     background: #fff;
     transition: 0.25s ease-in-out;
   }
-  
-  label span:nth-child(1){
-    top: 0;
-  }
-  
-  label span:nth-child(2){
-    top: 10px;
-  }
-  
-  label span:nth-child(3){
-    top: 20px;
-  }
-  
-  #checkbox-menu:checked + label span:nth-child(1){
-    transform: rotate(-45deg);
-    top: 8px;
-  }
-  
-  #checkbox-menu:checked + label span:nth-child(2){
-    opacity: 0;
-  }
-  
-  #checkbox-menu:checked + label span:nth-child(3){
-    transform: rotate(45deg);
-    top:8px;
-  }
-
-  header {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    background-color: #265742;
-    width: 100%;
-    box-sizing: border-box;
-}
 
 .Logo{
-    /* display: flex; */
-    align-items: center;
+   align-items: center;
     font-family: 'rubik';
     font-size: 100%;
     font-weight: 900;
@@ -91,7 +96,7 @@ header > h3{
     text-transform: uppercase;
 }
 
-.btnApp{
+/* .btnApp{
     font-family: "Josefin Sans", Sans-serif;
     text-transform: uppercase;
     font-weight: 800;
@@ -103,55 +108,33 @@ header > h3{
     border: none;
     padding: 0.8rem 1.3rem;
     margin: 0.5rem;
-}
+} */
 
-.btnApp:hover{
+/* .btnApp:hover{
     background-color: #61CE70;
     transition: all .3s ease;
-}
+} */
 
 .imgLogo{
     width: 4rem;
     margin-left: 1rem;
 }
 
-.linkMenu{
-    margin-right: 2rem;
-    text-align: center;
+ .fundo{
+    height: 100%;
+    margin-bottom: 18%;
+    color: #9cdb72;
     font-family: "PT Sans", Sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffffb7;
-}
-
-.linkMenu:hover{
-    color: #61CE70;
-    transition: all .3s ease;
-}
-
-nav ul li {
-    margin: 0.5rem;
-}
-
-nav > ul{
-    display: flex; 
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-.fundo{
-    height: 56vh;
-    width: 100%;
-    color: #e1ffa6;
-    font-family: "PT Sans", Sans-serif;
-    font-size: 2.8vw;
+    font-size: 2.9rem;
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: -0.03em;
+    margin-left: 14%;
+    margin-right: 14%;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 10rem;
 }
 
 .fundo > h4{
@@ -164,7 +147,7 @@ nav > ul{
 .imgFundo{
     width: 100%;
     position: absolute;
-    top: 11.4rem;
+    top: 7.2rem;
     left: 0;
     width: 100%;
     height: 80%;
@@ -174,7 +157,7 @@ nav > ul{
 
 .sobrepor{
     position: absolute;
-    top: 11.4rem;
+    top: 7.2rem;
     left: 0;
     width: 100%;
     height: 80%;
@@ -340,13 +323,54 @@ footer > nav{
     .col-4 {
         width: calc(50% - 20px); /* 2 cards por linha em telas médias */
     }
+
+    .menu-icon {
+        display: block;
+        padding-right: 10px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(5, 44, 1, 0.568);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+        padding: 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + ul {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 15px 0;
+    }
+
+    nav ul li label {
+        width: 100%;
+        display: block;
+    }
+    
+    .fundo {
+        font-size: 2rem;
+        margin-top: 14rem;
+    }
+    
+    main{
+        margin-top: 11rem;
+    }
+    
 }
 
 @media screen and (max-width: 600px){
-
-    .btnApp{
-        display: none;
-    }
 
     #galeria > h2 {
         font-size: 1.4rem;
@@ -364,43 +388,6 @@ footer > nav{
         height: 54vh;
     }
 
-    .visible{
-        display: block;
-      }
-
-      header{
-        flex-direction: row;
-        height: 13rem; 
-        align-items: center;
-        display: flex;
-      }
-    
-      .menu{
-        position: absolute;
-        left: 40%;
-        top: 30%;
-        width: 10%;
-      }
-
-      .menu ul li {
-        display: inline;
-        margin-left: 1%;
-      }
-
-      nav > ul{
-        display: block;
-        width: 20%;
-        height: 2rem;
-      }
-
-    .hamb{
-        display: none;
-        left: 80%;
-        position: relative;
-        width: 50px;
-        bottom:6.5rem ;
-      }
-
     .setaRecicla{
     width: 0%;
     }
@@ -408,19 +395,6 @@ footer > nav{
     .ladoImg{
         width: 0%;
     }
-
-    .menu a{
-        font-size: 10px;
-        line-height: 1rem;
-        font-weight: 700;
-    }
-    
-    .menu{
-      line-height: 12px;
-      padding: 0 40px;
-      margin-top: -2rem;
-    }
-
 }
 
 @media screen and (max-width: 300px){
@@ -435,6 +409,15 @@ footer > nav{
 
     #galeria {
         height: 320vh;
+    }
+
+        
+    .fundo {
+        font-size: 1.3rem;
+    }
+
+    .fundo > h4{
+        font-size: 0.5rem;
     }
 
 }

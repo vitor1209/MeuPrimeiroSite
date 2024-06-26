@@ -15,43 +15,25 @@
         <title>Recolhe aí</title>
     </head>
     <body>
-        
-        <header>
-            
-            <div class="Logo">
-                <img class="imgLogo" src="img/ico recolhe ai sem fundo.png" alt="icone lixeira reciclar">
-                <h3 id="txtLogo">Recolhe aí</h3>
+        <header class="cabecalho">
+            <div class="logo">
+                <img class="logotopo" src="img/logo.png" alt="">
             </div>
-            <nav class="menu">
+            <nav id="menu">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
                 <ul>
-                    <li> <a class="linkMenu" href="index.html">home</a> </li>
-                    <li> <a class="linkMenu" href="lixeira.html">sobre a lixeira</a> </li>
-                    <li> <a class="linkMenu" href="#">reciclagem</a> </li>
-                    <li> <a class="linkMenu" href="#">quem somos</a> </li>
-                    <li> <a class="linkMenu" href="#">futuro do projeto</a> </li>
-                    <li> <a class="linkMenu" href="#">contato</a> </li>
-                    
-                    <li>
-                  <button class="btnApp"><a href="#" target="_blank" rel="noopener noreferrer"></a>baixe o app</button>
-                </li>
+                    <li><a href="index.html" onclick="document.getElementById('menu-toggle').click()">home</a></li>
+                    <li><a href="lixeira.html" onclick="document.getElementById('menu-toggle').click()">sobre a lixeira</a></li>
+                    <li><a href="#" onclick="document.getElementById('menu-toggle').click()">reciclagem</a></li>
+                    <li><a href="#" onclick="document.getElementById('menu-toggle').click()">quem somos</a></li>
+                    <li><a href="#" onclick="document.getElementById('menu-toggle').click()">futuro do projeto</a></li>
+                    <li><a href="#" onclick="document.getElementById('menu-toggle').click()">contato</a></li>
+                    <li><a href="#" onclick="document.getElementById('menu-toggle').click()">quem somos</a></li>                
+                </ul>
     
-            </ul>
-        </nav>
-        
-        <!-- <div class="hamb">
-          <input type="checkbox" id="checkbox-menu">
-      
-          <label id="lblMenu" for="checkbox-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-            
-          </label>
-       
-        </div> -->
-    </header> 
-
-    
+            </nav>
+        </header>
     
     <div class="fundo">
     <img class="imgFundo" src="img/fundoPagRecicla.avif" alt="fundo de criaçao para arduino">
