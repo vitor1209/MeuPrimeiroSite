@@ -377,6 +377,7 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
   }
+  
 
 input[type=tel], select {
     width: 100%;
@@ -389,6 +390,26 @@ input[type=tel], select {
   }
 
   input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=date], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -413,7 +434,6 @@ input[type=tel], select {
     background-color: #5f9980;
     padding: 70px;
   }
-
   
   input[type=submit] {
     width: 100%;
@@ -587,9 +607,12 @@ input[type=tel], select {
     }
     
     #numeros {
-        padding: 2rem 5rem;
+        padding: 2rem 2rem;
     }
-
+    
+    .fundo > h4 {
+        margin-top: 3vh
+    }
 }
 
 @media screen and (max-width: 300px){
